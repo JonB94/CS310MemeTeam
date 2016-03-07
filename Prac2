@@ -1,0 +1,99 @@
+package cs310meme;
+
+
+import java.util.HashMap;
+import java.util.Stack;
+import java.lang.String;
+import java.lang.Character;
+
+
+public class Parser {
+
+	
+	public boolean program(String sentence){
+		
+		
+		String[] words = sentence.split(" ");
+		
+		int len = words.length;
+		int count = 0;
+		
+		while(count != len){
+			if(words[count] == "LET"){
+				if(words[count+2] == "="){
+					if(words[count+4] == ";"){
+						
+					}
+					else break;
+				}
+				else break;
+			}
+			else break;
+			
+			
+			
+			
+			count++;
+		}
+		
+		return false;
+	}
+	
+	private void assignment(){
+		
+	}
+	
+	private boolean query(){
+		
+		return false;
+	}
+	
+	private boolean proposition(){
+		
+		return false;
+	}
+	
+	private boolean disjunction(){
+		return false;
+	}
+	
+	private boolean conjunction(){
+		
+		return false;
+	}
+	
+	private boolean negation(){
+		
+		return false;
+	}
+	
+	private boolean expression(){
+		
+		return false;
+	}
+	
+	private boolean bool(){
+		
+		return false;
+	}
+	
+	
+	private String var(){
+		return null;
+	}
+	
+	private boolean literal(String s){
+		boolean bool = true;
+		
+		if(s == "TRUE"){
+			bool = true;
+		}
+		if(s == "FALSE"){
+			bool = false;
+		}
+		return bool;
+	}
+	
+}
+
+	

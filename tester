@@ -1,0 +1,19 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Tester {
+	
+	public static void main(String [] args) throws FileNotFoundException{
+		
+		Parser parse = new Parser();
+		File file = new File ("test.txt");
+		Scanner sc = new Scanner (file);
+		
+		while(sc.hasNextLine()){
+			String test = new String(sc.nextLine());
+			parse.program(test);
+		}
+	}
+
+}
